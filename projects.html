@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ka" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="კახი ქაჯაია - პროექტები: რაც ვისწავლე კურსის სამ ლექციაზე.">
+<title>პროექტები | კახი ქაჯაია - Full Stack დეველოპერი</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Georgian:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{fontFamily:{sans:['"Noto Sans Georgian"','Inter','sans-serif']}}}}</script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white min-h-screen flex flex-col relative overflow-x-hidden">
+<div class="fixed inset-0 pointer-events-none z-0" aria-hidden="true">
+  <div class="absolute -top-40 -left-40 w-72 h-72 sm:w-96 sm:h-96 bg-indigo-600/20 rounded-full blur-3xl"></div>
+  <div class="absolute top-1/3 -right-40 w-72 h-72 sm:w-96 sm:h-96 bg-purple-600/15 rounded-full blur-3xl"></div>
+</div>
+<header id="top" class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+    <div class="min-w-0">
+      <h1 class="text-lg sm:text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-indigo-300 bg-clip-text text-transparent whitespace-nowrap">
+        <a href="index.html">კახი ქაჯაია</a>
+      </h1>
+      <p class="text-xs sm:text-sm font-medium text-indigo-400 flex items-center gap-1.5 mt-0.5">
+        <span class="status-pulse inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
+        <span class="truncate">Junior Full Stack დეველოპერი</span>
+      </p>
+    </div>
+    <nav aria-label="მთავარი ნავიგაცია" class="hidden lg:block">
+      <ul class="flex items-center gap-2 text-sm text-slate-300 whitespace-nowrap">
+        <li><a href="index.html" class="px-3 py-1.5 rounded-lg font-semibold transition-all duration-200 font-medium hover:text-white hover:bg-slate-800/80">მთავარი</a></li>
+        <li><a href="about.html" class="px-3 py-1.5 rounded-lg font-semibold transition-all duration-200 font-medium hover:text-white hover:bg-slate-800/80">ჩემ შესახებ</a></li>
+        <li><a href="projects.html" class="px-3 py-1.5 rounded-lg font-semibold transition-all duration-200 text-white bg-indigo-600/30 border border-indigo-700/60" aria-current="page">პროექტები</a></li>
+        <li><a href="contact.html" class="px-3 py-1.5 rounded-lg font-semibold transition-all duration-200 bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-600/25">კონტაქტი</a></li>
+        </ul>
+    </nav>
+    <button id="burger-menu-btn" type="button" class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 border border-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-colors" aria-label="მენიუს გახსნა" aria-expanded="false" aria-controls="mobile-menu">
+      <i class="fa-solid fa-bars text-xl"></i>
+    </button>
+  </div>
+  <div id="mobile-menu" class="menu-closed lg:hidden border-t border-slate-800/80 bg-slate-950/95 backdrop-blur-xl px-4 py-4">
+    <nav aria-label="მობილური ნავიგაცია">
+      <ul class="flex flex-col gap-1.5 text-sm font-medium text-slate-300">
+        <li><a href="index.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition-colors hover:text-white hover:bg-slate-800/80"><i class="fa-solid fa-house text-indigo-400 w-4 text-center"></i><span>მთავარი</span></a></li>
+        <li><a href="about.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition-colors hover:text-white hover:bg-slate-800/80"><i class="fa-solid fa-user text-indigo-400 w-4 text-center"></i><span>ჩემ შესახებ</span></a></li>
+        <li><a href="projects.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition-colors text-white bg-indigo-600/30 border border-indigo-700/60 font-semibold" aria-current="page"><i class="fa-solid fa-layer-group text-indigo-400 w-4 text-center"></i><span>პროექტები</span></a></li>
+        <li><a href="contact.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition-colors hover:text-white hover:bg-slate-800/80"><i class="fa-solid fa-envelope text-indigo-400 w-4 text-center"></i><span>კონტაქტი</span></a></li>
+        </ul>
+    </nav>
+  </div>
+</header>
+<main class="relative z-10 flex-grow w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-14 sm:space-y-16">
+<section class="text-center max-w-2xl mx-auto space-y-3"><span class="text-xs uppercase tracking-widest text-indigo-400 font-bold">ჩემი სასწავლო გზა</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">პროექტები: რაც ვისწავლე</h2>
+<p class="text-sm sm:text-base text-slate-400">აქ არის მხოლოდ ის თემები, რომლებიც კურსის სამ ლექციაზე გავიარე და ამ პორტფოლიოში პრაქტიკაში გამოვიყენე.</p></section>
+<section class="space-y-6"><div class="max-w-2xl"><span class="text-xs uppercase tracking-widest text-indigo-400 font-bold">ლექცია 1</span><h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mt-1">HTML და AI-ით მუშაობა</h3><p class="text-sm text-slate-400 mt-1">პირველი ნაბიჯები: სუფთა HTML-ით აწყობილი მრავალგვერდიანი საიტი</p></div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6"><article id="semantic" class="glow-card rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl scroll-mt-24 p-5 sm:p-6 flex flex-col gap-4">
+  <div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg flex-shrink-0"><i class="fa-solid fa-sitemap"></i></div><h4 class="text-lg font-bold text-white leading-snug">სემანტიკური HTML5 გვერდი</h4></div>
+  <p class="text-sm text-slate-300 leading-relaxed">ვისწავლე, როგორ დავყო გვერდი აზრობრივ ნაწილებად და არა მხოლოდ div-ებად.</p>
+  <ul class="space-y-2 text-sm text-slate-300"><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-cyan-400 mt-1 text-xs flex-shrink-0"></i><span><code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code>, <code>aside</code>, <code>footer</code></span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-cyan-400 mt-1 text-xs flex-shrink-0"></i><span>ერთი <code>h1</code> და სათაურების იერარქია <code>h2</code>–<code>h6</code></span></li></ul>
+  <div class="flex flex-wrap gap-1.5 pt-3 mt-auto border-t border-slate-800/60"><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">HTML5</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Semantic tags</span></div></article><article id="basic-tags" class="glow-card rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl scroll-mt-24 p-5 sm:p-6 flex flex-col gap-4">
+  <div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg flex-shrink-0"><i class="fa-solid fa-image"></i></div><h4 class="text-lg font-bold text-white leading-snug">ტექსტი, სურათები და ბმულები</h4></div>
+  <p class="text-sm text-slate-300 leading-relaxed">ძირითადი თეგები, რომლებითაც ნებისმიერი გვერდი შედგება.</p>
+  <ul class="space-y-2 text-sm text-slate-300"><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-400 mt-1 text-xs flex-shrink-0"></i><span><code>p</code>, <code>div</code>, <code>a</code> და <code>img</code> თეგები</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-400 mt-1 text-xs flex-shrink-0"></i><span><code>alt</code> ტექსტი სურათებზე და ბმულები გვერდებს შორის</span></li></ul>
+  <div class="flex flex-wrap gap-1.5 pt-3 mt-auto border-t border-slate-800/60"><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">img</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">a</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">div</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">p</span></div></article><article id="multipage" class="glow-card rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl scroll-mt-24 p-5 sm:p-6 flex flex-col gap-4">
+  <div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center text-lg flex-shrink-0"><i class="fa-solid fa-robot"></i></div><h4 class="text-lg font-bold text-white leading-snug">მრავალგვერდიანი პორტფოლიო AI-ით</h4></div>
+  <p class="text-sm text-slate-300 leading-relaxed">ავაწყვე ოთხი დამოუკიდებელი გვერდი: მთავარი, ჩემ შესახებ, პროექტები, კონტაქტი.</p>
+  <ul class="space-y-2 text-sm text-slate-300"><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-violet-400 mt-1 text-xs flex-shrink-0"></i><span>Antigravity IDE და Gemini ასისტენტი კოდის დასაგეგმად</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-violet-400 mt-1 text-xs flex-shrink-0"></i><span>საერთო ნავიგაცია და ფუტერი ყველა გვერდზე</span></li></ul>
+  <div class="flex flex-wrap gap-1.5 pt-3 mt-auto border-t border-slate-800/60"><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Multi-page</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Antigravity IDE</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Gemini</span></div></article></div></section>
+<section class="space-y-6"><div class="max-w-2xl"><span class="text-xs uppercase tracking-widest text-indigo-400 font-bold">ლექცია 2</span><h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mt-1">Tailwind CSS და სტილები</h3><p class="text-sm text-slate-400 mt-1">ლექცია 2: გვერდს დიზაინი და განლაგება მივეცი</p></div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6"><article id="tailwind" class="glow-card rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl scroll-mt-24 p-5 sm:p-6 flex flex-col gap-4">
+  <div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg flex-shrink-0"><i class="fa-solid fa-palette"></i></div><h4 class="text-lg font-bold text-white leading-snug">Tailwind CSS სტილები</h4></div>
+  <p class="text-sm text-slate-300 leading-relaxed">სტილები პირდაპირ HTML-ში, utility კლასებით, ცალკე CSS ფაილის გარეშე.</p>
+  <ul class="space-y-2 text-sm text-slate-300"><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-cyan-400 mt-1 text-xs flex-shrink-0"></i><span>ფერები, დაშორებები, ჩრდილები და მომრგვალებული კუთხეები</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-cyan-400 mt-1 text-xs flex-shrink-0"></i><span><code>hover:</code> ეფექტები ღილაკებსა და ბარათებზე</span></li></ul>
+  <div class="flex flex-wrap gap-1.5 pt-3 mt-auto border-t border-slate-800/60"><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Tailwind CSS</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Utility classes</span></div></article><article id="flexbox" class="glow-card rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl scroll-mt-24 p-5 sm:p-6 flex flex-col gap-4">
+  <div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg flex-shrink-0"><i class="fa-solid fa-table-columns"></i></div><h4 class="text-lg font-bold text-white leading-snug">Flexbox განლაგება</h4></div>
+  <p class="text-sm text-slate-300 leading-relaxed">Flexbox Froggy-ით ვივარჯიშე და იგივე პრინციპები გამოვიყენე ჰედერსა და ბარათებში.</p>
+  <ul class="space-y-2 text-sm text-slate-300"><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-400 mt-1 text-xs flex-shrink-0"></i><span><code>flex</code>, <code>items-center</code>, <code>justify-between</code>, <code>gap</code></span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-400 mt-1 text-xs flex-shrink-0"></i><span>მობილურზე ვერტიკალურად, დიდ ეკრანზე ჰორიზონტალურად</span></li></ul>
+  <div class="flex flex-wrap gap-1.5 pt-3 mt-auto border-t border-slate-800/60"><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Flexbox</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Flexbox Froggy</span></div></article><article id="fonts" class="glow-card rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl scroll-mt-24 p-5 sm:p-6 flex flex-col gap-4">
+  <div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg flex-shrink-0"><i class="fa-solid fa-font"></i></div><h4 class="text-lg font-bold text-white leading-snug">Google Fonts და დიზაინის იდეები</h4></div>
+  <p class="text-sm text-slate-300 leading-relaxed">ქართული ტექსტისთვის შევარჩიე კარგად წასაკითხი შრიფტი.</p>
+  <ul class="space-y-2 text-sm text-slate-300"><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-amber-400 mt-1 text-xs flex-shrink-0"></i><span>Noto Sans Georgian და Inter შრიფტები</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-amber-400 mt-1 text-xs flex-shrink-0"></i><span>დიზაინის იდეები Stitch-იდან და Dribbble-დან</span></li></ul>
+  <div class="flex flex-wrap gap-1.5 pt-3 mt-auto border-t border-slate-800/60"><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Google Fonts</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Stitch</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Dribbble</span></div></article></div></section>
+<section class="space-y-6"><div class="max-w-2xl"><span class="text-xs uppercase tracking-widest text-indigo-400 font-bold">ლექცია 3</span><h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mt-1">რესპონსივი დიზაინი და GitHub</h3><p class="text-sm text-slate-400 mt-1">ლექცია 3: საიტი ყველა ეკრანზე იკითხება და იგზავნება GitHub-ით</p></div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6"><article id="responsive" class="glow-card rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl scroll-mt-24 p-5 sm:p-6 flex flex-col gap-4">
+  <div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg flex-shrink-0"><i class="fa-solid fa-mobile-screen"></i></div><h4 class="text-lg font-bold text-white leading-snug">რესპონსივი დიზაინი</h4></div>
+  <p class="text-sm text-slate-300 leading-relaxed">საიტი კარგად ჩანს ტელეფონზე, ტაბლეტსა და კომპიუტერზე.</p>
+  <ul class="space-y-2 text-sm text-slate-300"><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-cyan-400 mt-1 text-xs flex-shrink-0"></i><span><code>meta viewport</code> და ბრეიქფოინთები <code>sm:</code>, <code>md:</code>, <code>lg:</code></span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-cyan-400 mt-1 text-xs flex-shrink-0"></i><span>ბარათები 1, 2 ან 3 სვეტად ლაგდება ეკრანის მიხედვით</span></li></ul>
+  <div class="flex flex-wrap gap-1.5 pt-3 mt-auto border-t border-slate-800/60"><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Responsive</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Tailwind breakpoints</span></div></article><article id="burger" class="glow-card rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl scroll-mt-24 p-5 sm:p-6 flex flex-col gap-4">
+  <div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center text-lg flex-shrink-0"><i class="fa-solid fa-bars"></i></div><h4 class="text-lg font-bold text-white leading-snug">ბურგერ მენიუ</h4></div>
+  <p class="text-sm text-slate-300 leading-relaxed">პატარა ეკრანზე ნავიგაცია ბურგერ აიქონში იმალება და ღილაკზე დაჭერით იხსნება.</p>
+  <ul class="space-y-2 text-sm text-slate-300"><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-violet-400 mt-1 text-xs flex-shrink-0"></i><span><code>hidden lg:block</code> და <code>lg:hidden</code> კლასები</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-violet-400 mt-1 text-xs flex-shrink-0"></i><span>Font Awesome აიქონი და მცირე JavaScript გახსნა/დახურვისთვის</span></li></ul>
+  <div class="flex flex-wrap gap-1.5 pt-3 mt-auto border-t border-slate-800/60"><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Burger menu</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Font Awesome</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">JavaScript</span></div></article><article id="github" class="glow-card rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl scroll-mt-24 p-5 sm:p-6 flex flex-col gap-4">
+  <div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg flex-shrink-0"><i class="fa-brands fa-github"></i></div><h4 class="text-lg font-bold text-white leading-snug">GitHub რეპოზიტორია</h4></div>
+  <p class="text-sm text-slate-300 leading-relaxed">პროექტს ვაგზავნი GitHub-ზე ბმულით და არა დაზიპული ფოლდერით.</p>
+  <ul class="space-y-2 text-sm text-slate-300"><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-400 mt-1 text-xs flex-shrink-0"></i><span>Git/GitHub Desktop-ით commit და push</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-400 mt-1 text-xs flex-shrink-0"></i><span>აიქონები: Font Awesome და SVG (lordicon)</span></li></ul>
+  <div class="flex flex-wrap gap-1.5 pt-3 mt-auto border-t border-slate-800/60"><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">Git</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">GitHub Desktop</span><span class="px-2 py-0.5 rounded-md bg-slate-800 text-indigo-300 text-xs font-mono">SVG icons</span></div></article></div></section>
+<div class="flex flex-col sm:flex-row justify-center gap-3"><a href="contact.html" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-600/30 transition-all"><i class="fa-solid fa-paper-plane text-xs"></i> დამიკავშირდით</a><a href="index.html" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 text-slate-200 transition-all"><i class="fa-solid fa-arrow-left text-xs"></i> მთავარ გვერდზე</a></div>
+</main>
+<footer class="relative z-10 border-t border-slate-800/80 bg-slate-950/90 py-8 backdrop-blur-md">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 text-xs sm:text-sm text-slate-400 text-center">
+    <p class="flex flex-wrap justify-center gap-x-4 gap-y-2">
+      <a href="#top" class="hover:text-indigo-400">↑ გვერდის თავში</a>
+      <a href="index.html" class="hover:text-indigo-400">მთავარი</a>
+      <a href="about.html" class="hover:text-indigo-400">ჩემ შესახებ</a>
+      <a href="projects.html" class="hover:text-indigo-400">პროექტები</a>
+      <a href="contact.html" class="hover:text-indigo-400">კონტაქტი</a>
+    </p>
+    <p class="flex justify-center gap-5">
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-400 flex items-center gap-1.5"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-400 flex items-center gap-1.5"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </p>
+    <p>&copy; 2026 კახი ქაჯაია. ყველა უფლება დაცულია.</p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
